@@ -29,7 +29,7 @@ void MainWindow::setupTimers()
     timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, [=]() {
         switch (step) {
-		case 0:
+	case 0:
             showRedCircle();
             break;
         case 1:
@@ -44,13 +44,13 @@ void MainWindow::setupTimers()
         case 4:
             showGreenCircle();
             break;
-		case 5:
+	case 5:
             hideCircles();
             break;
-		case 6:
+	case 6:
             showYellowCircle();
             break;
-		case 7:
+	case 7:
             hideCircles();
             break;
 		}
